@@ -1,11 +1,13 @@
-package nyc.bbah.mvp_retro;
+package nyc.bbah.mvp_retro.main_activity;
 
 import java.util.ArrayList;
+
+import nyc.bbah.mvp_retro.model.Notice;
 
 public interface MainContract {
 
     /**
-     * Call when user interact with the view and other when view OnDestroy()
+     * Call when user interact with the view and when view OnDestroy()
      * */
     interface presenter{
 
@@ -33,7 +35,7 @@ public interface MainContract {
     /**
      * Intractors are classes built for fetching data from your database, web services, or any other data source.
      **/
-    interface GetNoticeInterator{
+    interface GetNoticeInteractor {
 
         void getNoticeArrayList(OnFinishedListener onFinishedListener);
 
